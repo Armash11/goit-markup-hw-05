@@ -725,13 +725,10 @@ button {
 .close-btn {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 8px;
-  width: 8px;
-  height: 8px;
-  color: #2e2f42;
-  background-color: #e7e9fc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   margin-left: auto;
+  height: 24px;
+  width: 24px;
+
+  background-color: #e7e9fc;
 }
