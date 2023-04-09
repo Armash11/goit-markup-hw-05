@@ -444,7 +444,8 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   color: #8e8f99;
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
 }
 
 .customers-icon {
@@ -602,7 +603,10 @@ button {
   color: var(--accent-color);
   background-color: #f4f4fd;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 .service-btn:hover,
 .service-btn:focus {
@@ -739,12 +743,23 @@ button {
 .close-btn {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   height: 24px;
   width: 24px;
 
   background-color: #e7e9fc;
+
+  transition: background-color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  background-color: #404bbf;
+  fill: #ffffff;
 }
 
 .is-hidden {
